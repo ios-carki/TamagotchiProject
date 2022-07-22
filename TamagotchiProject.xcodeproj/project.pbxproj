@@ -16,6 +16,11 @@
 		C362ADDB288A931000A0D917 /* EntryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADDA288A931000A0D917 /* EntryCollectionViewController.swift */; };
 		C362ADDD288A935600A0D917 /* EntryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADDC288A935600A0D917 /* EntryCollectionViewCell.swift */; };
 		C362ADDF288A94DC00A0D917 /* TamagochiDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADDE288A94DC00A0D917 /* TamagochiDetails.swift */; };
+		C362ADE2288AAD8400A0D917 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C362ADE1288AAD8400A0D917 /* CustomAlertView.xib */; };
+		C362ADE4288AADA300A0D917 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADE3288AADA300A0D917 /* CustomAlertView.swift */; };
+		C362ADE6288ABFA500A0D917 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADE5288ABFA500A0D917 /* AlertView.swift */; };
+		C362ADE8288ADF9100A0D917 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */; };
+		C362ADEB288AE5DE00A0D917 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADEA288AE5DE00A0D917 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		C362ADDA288A931000A0D917 /* EntryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCollectionViewController.swift; sourceTree = "<group>"; };
 		C362ADDC288A935600A0D917 /* EntryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C362ADDE288A94DC00A0D917 /* TamagochiDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagochiDetails.swift; sourceTree = "<group>"; };
+		C362ADE1288AAD8400A0D917 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+		C362ADE3288AADA300A0D917 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		C362ADE5288ABFA500A0D917 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = TamagotchiProject/EntryView/PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		C362ADEA288AE5DE00A0D917 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,8 @@
 		C362ADC1288A7A2B00A0D917 /* TamagotchiProject */ = {
 			isa = PBXGroup;
 			children = (
+				C362ADE9288AE58E00A0D917 /* MainView */,
+				C362ADE0288AAD6900A0D917 /* Alert */,
 				C362ADD9288A921D00A0D917 /* SettingView */,
 				C362ADD8288A921000A0D917 /* TamagochiMainView */,
 				C362ADD7288A91F200A0D917 /* TamagochiSelectView */,
@@ -79,6 +91,7 @@
 		C362ADD6288A91E200A0D917 /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
+				C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */,
 				C362ADC8288A7A2B00A0D917 /* Main.storyboard */,
 				C362ADDA288A931000A0D917 /* EntryCollectionViewController.swift */,
 				C362ADDC288A935600A0D917 /* EntryCollectionViewCell.swift */,
@@ -106,6 +119,24 @@
 			children = (
 			);
 			path = SettingView;
+			sourceTree = "<group>";
+		};
+		C362ADE0288AAD6900A0D917 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C362ADE1288AAD8400A0D917 /* CustomAlertView.xib */,
+				C362ADE3288AADA300A0D917 /* CustomAlertView.swift */,
+				C362ADE5288ABFA500A0D917 /* AlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		C362ADE9288AE58E00A0D917 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C362ADEA288AE5DE00A0D917 /* MainViewController.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +199,7 @@
 			files = (
 				C362ADCF288A7A2C00A0D917 /* LaunchScreen.storyboard in Resources */,
 				C362ADCC288A7A2C00A0D917 /* Assets.xcassets in Resources */,
+				C362ADE2288AAD8400A0D917 /* CustomAlertView.xib in Resources */,
 				C362ADCA288A7A2B00A0D917 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,11 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C362ADC7288A7A2B00A0D917 /* ViewController.swift in Sources */,
+				C362ADE4288AADA300A0D917 /* CustomAlertView.swift in Sources */,
 				C362ADC3288A7A2B00A0D917 /* AppDelegate.swift in Sources */,
 				C362ADC5288A7A2B00A0D917 /* SceneDelegate.swift in Sources */,
 				C362ADDD288A935600A0D917 /* EntryCollectionViewCell.swift in Sources */,
+				C362ADE6288ABFA500A0D917 /* AlertView.swift in Sources */,
 				C362ADDF288A94DC00A0D917 /* TamagochiDetails.swift in Sources */,
+				C362ADE8288ADF9100A0D917 /* PopUpViewController.swift in Sources */,
 				C362ADDB288A931000A0D917 /* EntryCollectionViewController.swift in Sources */,
+				C362ADEB288AE5DE00A0D917 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

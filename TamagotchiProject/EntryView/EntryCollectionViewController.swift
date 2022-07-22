@@ -47,5 +47,23 @@ class EntryCollectionViewController: UICollectionViewController {
         
         return cell
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let data = tamagochiList.tamagochi[indexPath.row]
+        
+        if indexPath.row > 2 {
+            let alert1 = UIAlertController(title: "이 다마고치는 자는중이에요.", message: "추후 업데이트 예정입니다.", preferredStyle: UIAlertController.Style.alert)
+            let okAction1 = UIAlertAction(title: "돌아가기", style: .default) { (action) in}
+            alert1.addAction(okAction1)
+            
+            present(alert1, animated: false, completion: nil)
+        } else {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .crossDissolve
+            present(vc, animated: true, completion: nil)
+            
+        }
+        
+    }
 }
