@@ -29,6 +29,7 @@ class EntryCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
+        
     }
     
     
@@ -63,6 +64,9 @@ class EntryCollectionViewController: UICollectionViewController {
             vc.modalPresentationStyle = .overCurrentContext
             vc.modalTransitionStyle = .crossDissolve
             vc.imageRepo = data.image
+            vc.lableRepo = data.name
+            vc.introduceRepo = data.introduce
+            
             present(vc, animated: true, completion: nil)
             
           

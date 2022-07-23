@@ -11,26 +11,29 @@ class MainGameViewController: UIViewController {
     let backgroundColorSet = UIColor(red: 245/255, green: 252/255, blue: 252/255, alpha: 1)
     let fontColorSet = UIColor(red: 77/255, green: 106/255, blue: 120/255, alpha: 1)
     
-    @IBOutlet weak var textBackGroundImageView: UIImageView!
-    @IBOutlet weak var textOnImageLabel: UILabel!
+    @IBOutlet weak var textBackGroundImageView: UIImageView!//말풍선 이미지뷰
+    @IBOutlet weak var textOnImageLabel: UILabel!//말풍선 텍스트 레이블
     
-    @IBOutlet weak var charinGameImage: UIImageView!
-    @IBOutlet weak var charNameLabel: UILabel!
+    @IBOutlet weak var charinGameImage: UIImageView!//캐릭터 이미지뷰
+    @IBOutlet weak var charNameLabel: UILabel!//캐릭터 이름 텍스트 레이블
     
-    @IBOutlet weak var charLevelLabel: UILabel!
-    @IBOutlet weak var numOfRiceLabel: UILabel!
-    @IBOutlet weak var numOfWaterLabel: UILabel!
+    @IBOutlet weak var charLevelLabel: UILabel!//레벨 텍스트 레이블
+    @IBOutlet weak var numOfRiceLabel: UILabel!//밥알 텍스트 레이블
+    @IBOutlet weak var numOfWaterLabel: UILabel!//물방울 텍스트 레이블
     
-    @IBOutlet weak var riceTextField: UITextField!
-    @IBOutlet weak var waterTextField: UITextField!
+    @IBOutlet weak var riceTextField: UITextField!//밥주기 텍스트 필드
+    @IBOutlet weak var waterTextField: UITextField!//물주기 텍스트 필드
     
-    @IBOutlet weak var riceButton: UIButton!
-    @IBOutlet weak var waterButton: UIButton!
+    @IBOutlet weak var riceButton: UIButton!//밥주기 버튼
+    @IBOutlet weak var waterButton: UIButton!//물주기 버튼
     
-    @IBOutlet weak var centerView: UIView!
-    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var centerView: UIView!//레벨 + 밥 + 물 뷰
+    @IBOutlet weak var bottomView: UIView!//텍스트필드 + 버튼 뷰
     
-    @IBOutlet weak var settingBarButton: UIBarButtonItem!
+    @IBOutlet weak var settingBarButton: UIBarButtonItem!//설정 바 버튼 아이템
+    
+    var inGameCharImage: String?
+    var inGameCharName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +44,16 @@ class MainGameViewController: UIViewController {
         bottomView.backgroundColor = backgroundColorSet
         view.backgroundColor = backgroundColorSet
         
-        charinGameImage.image = UIImage(named: "2-4")
 
         buttonDesign(buttonName1: riceButton, buttonName2: waterButton)
         textFieldDesign(textFieldName1: riceTextField, textFieldName2: waterTextField)
         textBackGroundImageView.image = UIImage(named: "bubble")
+        
+        if inGameCharImage == Optional("1-6") {
+            charinGameImage.image = UIImage(named: "1-1")
+        }
+        
+//        if inGameCharName == Optional("")
         
     }
     
