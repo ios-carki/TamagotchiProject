@@ -97,7 +97,7 @@ class PopUpViewController: UIViewController {
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         
-        vc.inGameCharImage = imageRepo
+        vc.inGameCharImage = imageRepo 
         vc.inGameCharName = lableRepo
 
         self.present(nav, animated: false)

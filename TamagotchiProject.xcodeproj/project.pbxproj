@@ -21,6 +21,8 @@
 		C362ADE6288ABFA500A0D917 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADE5288ABFA500A0D917 /* AlertView.swift */; };
 		C362ADE8288ADF9100A0D917 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */; };
 		C362ADED288BB5C100A0D917 /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADEC288BB5C100A0D917 /* MainGameViewController.swift */; };
+		C362ADEF288C619B00A0D917 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADEE288C619B00A0D917 /* SettingTableViewController.swift */; };
+		C362ADF1288C61A900A0D917 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADF0288C61A900A0D917 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C362ADE5288ABFA500A0D917 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = TamagotchiProject/EntryView/PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		C362ADEC288BB5C100A0D917 /* MainGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainGameViewController.swift; path = TamagotchiProject/EntryView/MainGameViewController.swift; sourceTree = SOURCE_ROOT; };
+		C362ADEE288C619B00A0D917 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		C362ADF0288C61A900A0D917 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		C362ADD9288A921D00A0D917 /* SettingView */ = {
 			isa = PBXGroup;
 			children = (
+				C362ADEE288C619B00A0D917 /* SettingTableViewController.swift */,
+				C362ADF0288C61A900A0D917 /* SettingTableViewCell.swift */,
 			);
 			path = SettingView;
 			sourceTree = "<group>";
@@ -209,7 +215,9 @@
 				C362ADC5288A7A2B00A0D917 /* SceneDelegate.swift in Sources */,
 				C362ADDD288A935600A0D917 /* EntryCollectionViewCell.swift in Sources */,
 				C362ADE6288ABFA500A0D917 /* AlertView.swift in Sources */,
+				C362ADF1288C61A900A0D917 /* SettingTableViewCell.swift in Sources */,
 				C362ADDF288A94DC00A0D917 /* TamagochiDetails.swift in Sources */,
+				C362ADEF288C619B00A0D917 /* SettingTableViewController.swift in Sources */,
 				C362ADE8288ADF9100A0D917 /* PopUpViewController.swift in Sources */,
 				C362ADDB288A931000A0D917 /* EntryCollectionViewController.swift in Sources */,
 				C362ADED288BB5C100A0D917 /* MainGameViewController.swift in Sources */,
