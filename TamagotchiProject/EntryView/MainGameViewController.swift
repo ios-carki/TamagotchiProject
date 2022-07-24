@@ -37,15 +37,18 @@ class MainGameViewController: UIViewController {
     
     var inGameCharImage: String?
     var inGameCharName: String?
+    var v1Name: String? = ""
     
     //레벨1, 밥알0, 물0 테이블뷰 타이틀 이름초기화
     var LevelCount = 1
     var RiceCount = 0
     var WaterCount = 0
-    var defaultUserName: String = "대장"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.setValue("고릴라", forKey: "Name")
+        v1Name = UserDefaults.standard.string(forKey: "Name")
         
         //초기 캐릭터정보(1, 0, 0)
         defaultCharInfo(levelLabel: charLevelLabel, riceLabel: numOfRiceLabel, waterLabel: numOfWaterLabel)
@@ -56,7 +59,7 @@ class MainGameViewController: UIViewController {
         //말풍선 이미지뷰
         textBackGroundImageView.image = UIImage(named: "bubble")
         
-        navigationItem.title = "\(defaultUserName)님의 다마고치"
+        navigationItem.title = "\(v1Name!)님의 다마고치"
         settingBarButton.image = UIImage(systemName: "person.circle")
         settingBarButton.tintColor = fontColorSet
         centerView.backgroundColor = backgroundColorSet
@@ -174,12 +177,15 @@ class MainGameViewController: UIViewController {
     
     //코드 분석하기 필요
     //MainGameVie -> 설정
+    //설정버튼
     @IBAction func settingButtonClicked(_ sender: UIBarButtonItem) {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: SettingTableViewController.identifier) as! SettingTableViewController
         vc.modalPresentationStyle = .fullScreen
         let nav = UINavigationController(rootViewController: vc)
+        
+        vc.rightTextLabel[0] = v1Name
         self.navigationController?.pushViewController(vc, animated: true)
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34C2D35288D52B300866432 /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C2D34288D52B300866432 /* ChangeNickNameViewController.swift */; };
 		C362ADC3288A7A2B00A0D917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC2288A7A2B00A0D917 /* AppDelegate.swift */; };
 		C362ADC5288A7A2B00A0D917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC4288A7A2B00A0D917 /* SceneDelegate.swift */; };
 		C362ADC7288A7A2B00A0D917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC6288A7A2B00A0D917 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34C2D34288D52B300866432 /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		C362ADBF288A7A2B00A0D917 /* TamagotchiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamagotchiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C362ADC2288A7A2B00A0D917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C362ADC4288A7A2B00A0D917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34C2D31288D526D00866432 /* ChangeNickName */ = {
+			isa = PBXGroup;
+			children = (
+				C34C2D34288D52B300866432 /* ChangeNickNameViewController.swift */,
+			);
+			path = ChangeNickName;
+			sourceTree = "<group>";
+		};
 		C362ADB6288A7A2B00A0D917 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		C362ADC1288A7A2B00A0D917 /* TamagotchiProject */ = {
 			isa = PBXGroup;
 			children = (
+				C34C2D31288D526D00866432 /* ChangeNickName */,
 				C362ADE0288AAD6900A0D917 /* Alert */,
 				C362ADD9288A921D00A0D917 /* SettingView */,
 				C362ADD8288A921000A0D917 /* MainGameView */,
@@ -219,6 +230,7 @@
 				C362ADDF288A94DC00A0D917 /* TamagochiDetails.swift in Sources */,
 				C362ADEF288C619B00A0D917 /* SettingTableViewController.swift in Sources */,
 				C362ADE8288ADF9100A0D917 /* PopUpViewController.swift in Sources */,
+				C34C2D35288D52B300866432 /* ChangeNickNameViewController.swift in Sources */,
 				C362ADDB288A931000A0D917 /* EntryCollectionViewController.swift in Sources */,
 				C362ADED288BB5C100A0D917 /* MainGameViewController.swift in Sources */,
 			);
