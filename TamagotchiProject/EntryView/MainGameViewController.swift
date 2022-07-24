@@ -47,8 +47,15 @@ class MainGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.setValue("고릴라", forKey: "Name")
+        UserDefaults.standard.setValue("대장", forKey: "Name")
+        UserDefaults.standard.setValue(1, forKey: "Level")
+        UserDefaults.standard.setValue(0, forKey: "Rice")
+        UserDefaults.standard.setValue(0, forKey: "Water")
+        
         v1Name = UserDefaults.standard.string(forKey: "Name")
+        LevelCount = UserDefaults.standard.integer(forKey: "Level")
+        RiceCount = UserDefaults.standard.integer(forKey: "Rice")
+        WaterCount = UserDefaults.standard.integer(forKey: "Water")
         
         //초기 캐릭터정보(1, 0, 0)
         defaultCharInfo(levelLabel: charLevelLabel, riceLabel: numOfRiceLabel, waterLabel: numOfWaterLabel)
@@ -59,14 +66,54 @@ class MainGameViewController: UIViewController {
         //말풍선 이미지뷰
         textBackGroundImageView.image = UIImage(named: "bubble")
         
-        navigationItem.title = "\(v1Name!)님의 다마고치"
+//        navigationItem.title = "\(v1Name!)님의 다마고치"
         settingBarButton.image = UIImage(systemName: "person.circle")
         settingBarButton.tintColor = fontColorSet
         centerView.backgroundColor = backgroundColorSet
         bottomView.backgroundColor = backgroundColorSet
         view.backgroundColor = backgroundColorSet
         
+        //메인게임 받아온 캐릭터 이름
+        charNameDesign(labelName: charNameLabel)
         
+        //메인게임 다마고치 이미지
+        gameChar(imageName: charinGameImage)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+        
+        v1Name = UserDefaults.standard.string(forKey: "Name")
+        navigationItem.title = "\(v1Name!)님의 다마고치"
+        
+        LevelCount = UserDefaults.standard.integer(forKey: "Level")
+        RiceCount = UserDefaults.standard.integer(forKey: "Rice")
+        WaterCount = UserDefaults.standard.integer(forKey: "Water")
+    }
+    
+    
+    //다마고치 메인 이미지 초기화
+    func gameChar(imageName: UIImageView) {
+        if charNameLabel.text == "따끔따끔 다마고치" {
+            imageName.image = UIImage(named: "1-1")
+        }else if charNameLabel.text == "방실방실 다마고치" {
+            imageName.image = UIImage(named: "2-1")
+        }else if charNameLabel.text == "반짝반짝 다마고치" {
+            imageName.image = UIImage(named: "3-1")
+        }
+    }
+    
+    //다마고치 이름 디자인
+    func charNameDesign(labelName: UILabel) {
+        labelName.text = inGameCharName
+        labelName.textColor = fontColorSet
+        labelName.font = .boldSystemFont(ofSize: 15)
+        labelName.textAlignment = .center
+        labelName.layer.borderWidth = 1
+        labelName.layer.cornerRadius = 5
+        labelName.layer.backgroundColor = backgroundColorSet.cgColor
+        labelName.layer.borderColor = fontColorSet.cgColor
     }
     
     //초기 캐릭터 정보(레벨 1, 밥알 0개, 물통 0개)
@@ -129,30 +176,96 @@ class MainGameViewController: UIViewController {
         }else if 20 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 30 {
             LevelCount = 2
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-1") && LevelCount == 2 {
+                charinGameImage.image = UIImage(named: "1-2")
+            }else if charinGameImage.image == UIImage(named: "2-1") && LevelCount == 2 {
+                charinGameImage.image = UIImage(named: "2-2")
+            }else if charinGameImage.image == UIImage(named: "3-1") && LevelCount == 2 {
+                charinGameImage.image = UIImage(named: "3-2")
+            }
         }else if 30 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 40 {
             LevelCount = 3
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-2") && LevelCount == 3 {
+                charinGameImage.image = UIImage(named: "1-3")
+            }else if charinGameImage.image == UIImage(named: "2-2") && LevelCount == 3 {
+                charinGameImage.image = UIImage(named: "2-3")
+            }else if charinGameImage.image == UIImage(named: "3-2") && LevelCount == 3 {
+                charinGameImage.image = UIImage(named: "3-3")
+            }
         }else if 40 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 50 {
             LevelCount = 4
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-3") && LevelCount == 4 {
+                charinGameImage.image = UIImage(named: "1-4")
+            }else if charinGameImage.image == UIImage(named: "2-3") && LevelCount == 4 {
+                charinGameImage.image = UIImage(named: "2-4")
+            }else if charinGameImage.image == UIImage(named: "3-3") && LevelCount == 4 {
+                charinGameImage.image = UIImage(named: "3-4")
+            }
         }else if 50 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 60 {
             LevelCount = 5
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-4") && LevelCount == 5 {
+                charinGameImage.image = UIImage(named: "1-5")
+            }else if charinGameImage.image == UIImage(named: "2-4") && LevelCount == 5 {
+                charinGameImage.image = UIImage(named: "2-5")
+            }else if charinGameImage.image == UIImage(named: "3-4") && LevelCount == 5 {
+                charinGameImage.image = UIImage(named: "3-5")
+            }
         }else if 60 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 70 {
             LevelCount = 6
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-5") && LevelCount == 6 {
+                charinGameImage.image = UIImage(named: "1-6")
+            }else if charinGameImage.image == UIImage(named: "2-5") && LevelCount == 6 {
+                charinGameImage.image = UIImage(named: "2-6")
+            }else if charinGameImage.image == UIImage(named: "3-5") && LevelCount == 6{
+                charinGameImage.image = UIImage(named: "3-6")
+            }
         }else if 70 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 80 {
             LevelCount = 7
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-6") {
+                charinGameImage.image = UIImage(named: "1-7")
+            }else if charinGameImage.image == UIImage(named: "2-6") {
+                charinGameImage.image = UIImage(named: "2-7")
+            }else if charinGameImage.image == UIImage(named: "3-6") {
+                charinGameImage.image = UIImage(named: "3-7")
+            }
         }else if 80 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 90 {
             LevelCount = 8
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-7") {
+                charinGameImage.image = UIImage(named: "1-8")
+            }else if charinGameImage.image == UIImage(named: "2-7") {
+                charinGameImage.image = UIImage(named: "2-8")
+            }else if charinGameImage.image == UIImage(named: "3-7") {
+                charinGameImage.image = UIImage(named: "3-8")
+            }
         }else if 90 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 100 {
             LevelCount = 9
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            if charinGameImage.image == UIImage(named: "1-8") {
+                charinGameImage.image = UIImage(named: "1-9")
+            }else if charinGameImage.image == UIImage(named: "2-8") {
+                charinGameImage.image = UIImage(named: "2-9")
+            }else if charinGameImage.image == UIImage(named: "3-8") {
+                charinGameImage.image = UIImage(named: "3-9")
+            }
         }else if 100 <= (RiceCount / 5) + (WaterCount / 2) {
             LevelCount = 10
             charLevelLabel.text = "LV\(LevelCount)"
+            
+            textOnImageLabel.text = "서버 최초 만렙 달성을 축하드립니다!"
         }
         return LevelCount
     }
@@ -164,6 +277,8 @@ class MainGameViewController: UIViewController {
         numOfRiceLabel.text = "- 밥알 \(RiceCount)개 -"
         
         countingFunc(addedObject: addedRice!)
+        
+        
     }
     
     //물주기 버튼

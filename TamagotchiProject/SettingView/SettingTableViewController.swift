@@ -24,9 +24,12 @@ class SettingTableViewController: UITableViewController {
         
         view.backgroundColor = backgroundColorSet
         titleSetting()
-
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+        tableView.reloadData()
+        rightTextLabel[0] = UserDefaults.standard.string(forKey: "Name")
     }
     
     func titleSetting() {
@@ -58,7 +61,8 @@ class SettingTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard indexPath.row == 1 && indexPath.row == 2 else{
+        //닉네임 변경
+        if indexPath.row == 0 {
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "ChangeNickNameViewController") as! ChangeNickNameViewController
             vc.modalPresentationStyle = .fullScreen
@@ -68,7 +72,36 @@ class SettingTableViewController: UITableViewController {
             vc.loadText = rightTextLabel[0]!
             self.navigationController?.pushViewController(vc, animated: true)
             
-            return
+            //다마고치 변경
+        }else if indexPath.row == 1 {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "EntryCollectionViewController") as! EntryCollectionViewController
+            let nav = UINavigationController(rootViewController: vc)
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            //초기화
+        }else if indexPath.row == 2 {
+            let alert = UIAlertController(title: "데이터 초기화", message: "'예'를 누르면 초기화됩니다.", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "예", style: .default) { (action) in
+                let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                let sceneDelegate = windowScene?.delegate as? SceneDelegate
+
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "EntryCollectionViewController") as! EntryCollectionViewController
+                let nav = UINavigationController(rootViewController: vc)
+                for key in UserDefaults.standard.dictionaryRepresentation().keys {
+                    UserDefaults.standard.removeObject(forKey: key.description)
+                    
+                }
+                sceneDelegate?.window?.rootViewController = nav
+                sceneDelegate?.window?.makeKeyAndVisible()
+            }
+            let cancelAction = UIAlertAction(title: "아뇨", style: .cancel) { (action) in}
+            alert.addAction(cancelAction)
+            alert.addAction(okAction)
+            
+            present(alert, animated: false, completion: nil)
         }
     }
 

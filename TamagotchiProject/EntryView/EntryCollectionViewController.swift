@@ -67,6 +67,7 @@ class EntryCollectionViewController: UICollectionViewController {
             vc.lableRepo = data.name
             vc.introduceRepo = data.introduce
             
+            
             present(vc, animated: true, completion: nil)
             
           

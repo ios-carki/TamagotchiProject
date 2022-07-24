@@ -124,7 +124,7 @@
         <!--Entry Collection View Controller-->
         <scene sceneID="VFv-bS-n75">
             <objects>
-                <collectionViewController id="5cO-DI-SEp" customClass="EntryCollectionViewController" customModule="TamagotchiProject" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="EntryCollectionViewController" id="5cO-DI-SEp" customClass="EntryCollectionViewController" customModule="TamagotchiProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="x6W-pM-bkC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUN-Gd-FG4">
-                                <rect key="frame" x="104" y="516" width="206" height="30"/>
+                                <rect key="frame" x="130" y="516" width="154" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ybD-d1-1ny"/>
                                 </constraints>
@@ -324,7 +324,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hFM-fq-rEB" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="60" id="0db-Kb-yYt"/>
-                            <constraint firstItem="4cC-Al-8Mb" firstAttribute="trailing" secondItem="YUN-Gd-FG4" secondAttribute="trailing" constant="104" id="6X8-4W-uZ1"/>
+                            <constraint firstItem="4cC-Al-8Mb" firstAttribute="trailing" secondItem="YUN-Gd-FG4" secondAttribute="trailing" constant="130" id="6X8-4W-uZ1"/>
                             <constraint firstItem="YUN-Gd-FG4" firstAttribute="top" secondItem="QmF-is-9Xo" secondAttribute="bottom" constant="8" id="8Yu-OO-WKf"/>
                             <constraint firstItem="kE5-9i-lzK" firstAttribute="top" secondItem="YUN-Gd-FG4" secondAttribute="bottom" constant="8" id="961-Nh-lpI"/>
                             <constraint firstItem="5Ys-Vc-MBm" firstAttribute="centerX" secondItem="hFM-fq-rEB" secondAttribute="centerX" id="BXt-E1-zBH"/>
@@ -332,7 +332,7 @@
                             <constraint firstItem="hFM-fq-rEB" firstAttribute="top" secondItem="4cC-Al-8Mb" secondAttribute="top" constant="32" id="DJz-c5-l1f"/>
                             <constraint firstItem="zqC-ti-zKI" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="72" id="Ecm-WA-br8"/>
                             <constraint firstItem="4cC-Al-8Mb" firstAttribute="trailing" secondItem="zqC-ti-zKI" secondAttribute="trailing" constant="72" id="FoN-mY-e6n"/>
-                            <constraint firstItem="YUN-Gd-FG4" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="104" id="G2C-5U-SdO"/>
+                            <constraint firstItem="YUN-Gd-FG4" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="130" id="G2C-5U-SdO"/>
                             <constraint firstItem="QmF-is-9Xo" firstAttribute="top" secondItem="hFM-fq-rEB" secondAttribute="bottom" constant="8" id="IJL-vi-o8R"/>
                             <constraint firstItem="kE5-9i-lzK" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="60" id="NXP-OO-yMe"/>
                             <constraint firstItem="5Ys-Vc-MBm" firstAttribute="centerY" secondItem="hFM-fq-rEB" secondAttribute="centerY" id="P9e-3O-KrU"/>

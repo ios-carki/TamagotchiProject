@@ -22,8 +22,10 @@ class ChangeNickNameViewController: UIViewController {
         
         titleSetting()
         rightBarButtonDesign(barButton: saveBarButton)
+        userNickNameTextField.placeholder = "\(loadText!)님의 이름을 알려주세요"
 
     }
+    
     
     func rightBarButtonDesign(barButton: UIBarButtonItem) {
         barButton.title = "저장"

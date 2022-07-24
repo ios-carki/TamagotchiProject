@@ -97,8 +97,10 @@ class PopUpViewController: UIViewController {
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         
-        vc.inGameCharImage = imageRepo 
         vc.inGameCharName = lableRepo
+        vc.LevelCount = UserDefaults.standard.integer(forKey: "Level")
+        vc.RiceCount = UserDefaults.standard.integer(forKey: "Rice")
+        vc.WaterCount = UserDefaults.standard.integer(forKey: "Water")
 
         self.present(nav, animated: false)
     }
