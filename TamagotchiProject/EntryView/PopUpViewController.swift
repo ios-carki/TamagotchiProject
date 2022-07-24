@@ -101,6 +101,7 @@ class PopUpViewController: UIViewController {
         vc.LevelCount = UserDefaults.standard.integer(forKey: "Level")
         vc.RiceCount = UserDefaults.standard.integer(forKey: "Rice")
         vc.WaterCount = UserDefaults.standard.integer(forKey: "Water")
+        vc.v1name = UserDefaults.standard.string(forKey: "Name") ?? "ㅅㅂ"
 
         self.present(nav, animated: false)
     }

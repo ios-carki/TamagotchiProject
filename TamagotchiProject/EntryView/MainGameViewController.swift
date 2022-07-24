@@ -37,25 +37,22 @@ class MainGameViewController: UIViewController {
     
     var inGameCharImage: String?
     var inGameCharName: String?
-    var v1Name: String? = ""
+//    var v1Name: String? = ""
     
     //레벨1, 밥알0, 물0 테이블뷰 타이틀 이름초기화
-    var LevelCount = 1
-    var RiceCount = 0
-    var WaterCount = 0
+
+    var loadLevel = 0
+    var loadRice = 0
+    var loadWater = 0
     
+    var WaterCount = UserDefaults.standard.value(forKey: "Water") as! Int
+    var RiceCount = UserDefaults.standard.value(forKey: "Rice") as! Int
+    var LevelCount = UserDefaults.standard.value(forKey: "Level") as! Int
+    var v1name = UserDefaults.standard.value(forKey: "Name") as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.setValue("대장", forKey: "Name")
-        UserDefaults.standard.setValue(1, forKey: "Level")
-        UserDefaults.standard.setValue(0, forKey: "Rice")
-        UserDefaults.standard.setValue(0, forKey: "Water")
         
-        v1Name = UserDefaults.standard.string(forKey: "Name")
-        LevelCount = UserDefaults.standard.integer(forKey: "Level")
-        RiceCount = UserDefaults.standard.integer(forKey: "Rice")
-        WaterCount = UserDefaults.standard.integer(forKey: "Water")
         
         //초기 캐릭터정보(1, 0, 0)
         defaultCharInfo(levelLabel: charLevelLabel, riceLabel: numOfRiceLabel, waterLabel: numOfWaterLabel)
@@ -66,12 +63,14 @@ class MainGameViewController: UIViewController {
         //말풍선 이미지뷰
         textBackGroundImageView.image = UIImage(named: "bubble")
         
-//        navigationItem.title = "\(v1Name!)님의 다마고치"
         settingBarButton.image = UIImage(systemName: "person.circle")
         settingBarButton.tintColor = fontColorSet
         centerView.backgroundColor = backgroundColorSet
         bottomView.backgroundColor = backgroundColorSet
         view.backgroundColor = backgroundColorSet
+        textOnImageLabel.text = "\(v1name)님 안녕하세요"
+        textOnImageLabel.textColor = fontColorSet
+        textOnImageLabel.textAlignment = .center
         
         //메인게임 받아온 캐릭터 이름
         charNameDesign(labelName: charNameLabel)
@@ -83,13 +82,13 @@ class MainGameViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
+
+        v1name = UserDefaults.standard.value(forKey: "Name") as! String
+        navigationItem.title = "\(v1name)님의 다마고치"
         
-        v1Name = UserDefaults.standard.string(forKey: "Name")
-        navigationItem.title = "\(v1Name!)님의 다마고치"
-        
-        LevelCount = UserDefaults.standard.integer(forKey: "Level")
-        RiceCount = UserDefaults.standard.integer(forKey: "Rice")
-        WaterCount = UserDefaults.standard.integer(forKey: "Water")
+        loadLevel = UserDefaults.standard.integer(forKey: "Level")
+        loadRice = UserDefaults.standard.integer(forKey: "Rice")
+        loadWater = UserDefaults.standard.integer(forKey: "Water")
     }
     
     
@@ -272,26 +271,26 @@ class MainGameViewController: UIViewController {
     
     //밥주기 버튼
     @IBAction func riceButtonClicked(_ sender: UIButton) {
+        let talkArr = ["물도 좀 주세요!", "밥맛이 좋네요", "배가 불러와요", "밥이 좀 식었어요"]
         let addedRice:Int? = Int(riceTextField.text!)
-        RiceCount = RiceCount + addedRice!
+        RiceCount += addedRice!
         numOfRiceLabel.text = "- 밥알 \(RiceCount)개 -"
         
         countingFunc(addedObject: addedRice!)
-        
-        
+        textOnImageLabel.text = talkArr.randomElement()
     }
     
     //물주기 버튼
     @IBAction func waterButtonClicked(_ sender: UIButton) {
+        let talkArr = ["밥도 좀 주세요!", "물맛이 좋네요", "우리나라는 물부족 국가인가요?", "저는 에비앙 생수 아니면 안마셔요.."]
         let addedWater:Int? = Int(waterTextField.text!)
-        WaterCount = WaterCount + addedWater!
+        WaterCount += addedWater!
         numOfWaterLabel.text = "물방울 \(WaterCount)개"
         
         countingFunc(addedObject: addedWater!)
+        textOnImageLabel.text = talkArr.randomElement()
     }
     
-    //코드 분석하기 필요
-    //MainGameVie -> 설정
     //설정버튼
     @IBAction func settingButtonClicked(_ sender: UIBarButtonItem) {
         
@@ -300,7 +299,11 @@ class MainGameViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         let nav = UINavigationController(rootViewController: vc)
         
-        vc.rightTextLabel[0] = v1Name
+        vc.rightTextLabel[0] = v1name
+        
+        UserDefaults.standard.set(WaterCount, forKey: "Water")
+        UserDefaults.standard.set(RiceCount, forKey: "Rice")
+        UserDefaults.standard.set(LevelCount, forKey: "Level")
         self.navigationController?.pushViewController(vc, animated: true)
         
     }

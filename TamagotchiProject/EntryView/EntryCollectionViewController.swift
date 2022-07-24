@@ -4,6 +4,13 @@
 //
 //  Created by Carki on 2022/07/22.
 //
+/*
+ 07.22 ~ 07.25
+ 아쉬운점  1. if문 guard or if let 으로 수정할 수 있었으면 코드가 더 간결했을 것이다.
+        2. 사용된 텍스트 필드를 밑줄로 된 텍스트필드로 고치지 못한 점.
+        3. 기기 초기화에 대한 이해 부족.
+        4. 팀별 회의때 다양한 옵션 추가가 나왔는데 그 기능들을 구현하지 못한 점.
+ */
 
 import UIKit
 
@@ -29,6 +36,13 @@ class EntryCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
+        
+        if UserDefaults.standard.string(forKey: "Level") == nil {
+            UserDefaults.standard.set(1, forKey: "Level")
+            UserDefaults.standard.set(0, forKey: "Water")
+            UserDefaults.standard.set(0, forKey: "Rice")
+            UserDefaults.standard.set("대장", forKey: "Name")
+        }
         
     }
     
