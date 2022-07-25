@@ -105,10 +105,10 @@
 		C362ADD6288A91E200A0D917 /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
-				C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */,
-				C362ADC8288A7A2B00A0D917 /* Main.storyboard */,
-				C362ADDA288A931000A0D917 /* EntryCollectionViewController.swift */,
 				C362ADDC288A935600A0D917 /* EntryCollectionViewCell.swift */,
+				C362ADDA288A931000A0D917 /* EntryCollectionViewController.swift */,
+				C362ADC8288A7A2B00A0D917 /* Main.storyboard */,
+				C362ADE7288ADF9100A0D917 /* PopUpViewController.swift */,
 				C362ADDE288A94DC00A0D917 /* TamagochiDetails.swift */,
 			);
 			path = EntryView;
@@ -141,9 +141,9 @@
 		C362ADE0288AAD6900A0D917 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C362ADE1288AAD8400A0D917 /* CustomAlertView.xib */,
-				C362ADE3288AADA300A0D917 /* CustomAlertView.swift */,
 				C362ADE5288ABFA500A0D917 /* AlertView.swift */,
+				C362ADE3288AADA300A0D917 /* CustomAlertView.swift */,
+				C362ADE1288AAD8400A0D917 /* CustomAlertView.xib */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -175,6 +175,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					11,
+				);
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -382,6 +385,7 @@
 				DEVELOPMENT_TEAM = 48S4T8HCYX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TamagotchiProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "노준혁";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -412,6 +416,7 @@
 				DEVELOPMENT_TEAM = 48S4T8HCYX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TamagotchiProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "노준혁";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

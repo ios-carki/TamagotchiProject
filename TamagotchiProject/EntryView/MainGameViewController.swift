@@ -14,6 +14,8 @@ class MainGameViewController: UIViewController {
     let backgroundColorSet = UIColor(red: 245/255, green: 252/255, blue: 252/255, alpha: 1)
     let fontColorSet = UIColor(red: 77/255, green: 106/255, blue: 120/255, alpha: 1)
     
+    var tamagochiList = tamagochiDetail()
+    
     @IBOutlet weak var textBackGroundImageView: UIImageView!//말풍선 이미지뷰
     @IBOutlet weak var textOnImageLabel: UILabel!//말풍선 텍스트 레이블
     
@@ -164,8 +166,28 @@ class MainGameViewController: UIViewController {
         
     }
     
+    //formula함수를 통해 수학식 계산함
+//    func formula() -> Int {
+//        var result = (RiceCount / 5) + (WaterCount / 2)
+//
+//        return result / 10
+//    }
+//
+//    func countFunc() {
+//
+//    }
+    //formula 함수와 countFunc()함수를 통해 Line183~ 레벨업 계산식을 대체하려고 했지만
+    //좋은 로직이 떠오르지 않아서 포기...
+    //코드 피드백을 통하여 이미지 파일의 이름에 접근하여 contain()을 통한 문자열 비교를 할 수 있다면 좋겠다고 생각함
+    
+    
     //밥알 + 물방울 값을 받아서 레벨을 측정하는 계산함수
     func countingFunc(addedObject: Int) -> Int{
+        //이미지 이름을 문자열로 받아오기
+//      charinGameImage.contains("1-")
+        print("이미지이름 출력")
+        print(type(of: charinGameImage.tag))
+        
         if 0 <= (RiceCount / 5) + (WaterCount / 2) && (RiceCount / 5) + (WaterCount / 2) < 10 {
             LevelCount = 1
             charLevelLabel.text = "LV\(LevelCount)"

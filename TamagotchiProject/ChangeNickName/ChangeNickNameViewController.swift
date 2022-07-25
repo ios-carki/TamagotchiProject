@@ -15,6 +15,7 @@ class ChangeNickNameViewController: UIViewController {
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var userNickNameTextField: UITextField!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = backgroundColorSet
@@ -26,20 +27,23 @@ class ChangeNickNameViewController: UIViewController {
 
     }
     
-    
+    //저장 바 버튼
     func rightBarButtonDesign(barButton: UIBarButtonItem) {
         barButton.title = "저장"
     }
     
+    //유저 이름에 따라 다른 타이틀 보여주기
     func titleSetting() {
         self.navigationController?.navigationBar.tintColor = fontColorSet
         
+        //닉네임 변경 뷰 -> 설정 뷰
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "SettingTableViewController") as! SettingTableViewController
         
         self.title = "\(loadText!)님 이름 정하기"
     }
     
+    //저장버튼 클릭 이벤트
     @IBAction func saveButtonClicked(_ sender: UIBarButtonItem) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "SettingTableViewController") as! SettingTableViewController

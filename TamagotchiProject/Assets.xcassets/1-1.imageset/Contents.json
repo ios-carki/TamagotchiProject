@@ -21,6 +21,9 @@
     "version" : 1
   },
   "properties" : {
+    "on-demand-resource-tags" : [
+      "11"
+    ],
     "template-rendering-intent" : "original"
   }
 }
