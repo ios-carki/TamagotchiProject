@@ -4,6 +4,9 @@
 //
 //  Created by Carki on 2022/07/22.
 //
+/*
+ 열거형 활용해보기
+ */
 
 import UIKit
 
@@ -41,6 +44,7 @@ class PopUpViewController: UIViewController {
         okButtonDesign(btnName: okButton)//ok버튼
         boundaryLineDesign(viewName: boundaryLineView)//경계선
     }
+    
     
     //캐릭터 이름 레이블 디자인
     func loadNameDesign(loadName: UILabel) {
@@ -101,10 +105,11 @@ class PopUpViewController: UIViewController {
         vc.LevelCount = UserDefaults.standard.integer(forKey: "Level")
         vc.RiceCount = UserDefaults.standard.integer(forKey: "Rice")
         vc.WaterCount = UserDefaults.standard.integer(forKey: "Water")
-        vc.v1name = UserDefaults.standard.string(forKey: "Name") ?? "ㅅㅂ"
+        vc.v1name = UserDefaults.standard.string(forKey: "Name") ?? "왜안돼"
 
         self.present(nav, animated: false)
     }
     
-
+    
+    
 }

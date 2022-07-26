@@ -72,15 +72,16 @@ class SettingTableViewController: UITableViewController {
             vc.loadText = rightTextLabel[0]!
             self.navigationController?.pushViewController(vc, animated: true)
             
-            //다마고치 변경
+        //다마고치 변경
         }else if indexPath.row == 1 {
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "EntryCollectionViewController") as! EntryCollectionViewController
             let nav = UINavigationController(rootViewController: vc)
             
+            
             self.navigationController?.pushViewController(vc, animated: true)
             
-            //초기화
+        //초기화
         }else if indexPath.row == 2 {
             let alert = UIAlertController(title: "데이터 초기화", message: "'예'를 누르면 초기화됩니다.", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "예", style: .default) { (action) in

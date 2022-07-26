@@ -100,6 +100,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cpv-fc-3T3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SU6-Jh-idK" firstAttribute="top" secondItem="cpv-fc-3T3" secondAttribute="top" constant="200" id="IXA-yP-Xbp"/>
                             <constraint firstItem="cpv-fc-3T3" firstAttribute="trailing" secondItem="SU6-Jh-idK" secondAttribute="trailing" constant="80" id="Idg-bm-nZp"/>
@@ -326,6 +327,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4cC-Al-8Mb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="hFM-fq-rEB" firstAttribute="leading" secondItem="4cC-Al-8Mb" secondAttribute="leading" constant="60" id="0db-Kb-yYt"/>
                             <constraint firstItem="4cC-Al-8Mb" firstAttribute="trailing" secondItem="YUN-Gd-FG4" secondAttribute="trailing" constant="130" id="6X8-4W-uZ1"/>
@@ -346,6 +348,9 @@
                             <constraint firstItem="zqC-ti-zKI" firstAttribute="top" secondItem="kE5-9i-lzK" secondAttribute="bottom" constant="8" id="kK4-oN-QBB"/>
                             <constraint firstItem="4cC-Al-8Mb" firstAttribute="trailing" secondItem="QmF-is-9Xo" secondAttribute="trailing" constant="84" id="p2S-bP-zda"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GY8-uD-Ufg" appends="YES" id="Q3L-WC-Gic"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="OKS-Bu-eQU">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="ht8-3q-4y3">
@@ -372,6 +377,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAF-t0-xRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GY8-uD-Ufg">
+                    <connections>
+                        <action selector="tapGesture:" destination="kVV-bg-i6N" id="tqf-f9-Kq8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1589.8550724637682" y="128.57142857142856"/>
         </scene>
