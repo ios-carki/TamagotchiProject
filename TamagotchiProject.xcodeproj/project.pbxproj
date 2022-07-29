@@ -8,6 +8,86 @@
 
 /* Begin PBXBuildFile section */
 		C34C2D35288D52B300866432 /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C2D34288D52B300866432 /* ChangeNickNameViewController.swift */; };
+		C35FC8C0289416CB0037F07C /* .npmignore in Resources */ = {isa = PBXBuildFile; fileRef = C35FC869289416CB0037F07C /* .npmignore */; };
+		C35FC8C1289416CB0037F07C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C35FC86A289416CB0037F07C /* index.html */; };
+		C35FC8C2289416CB0037F07C /* Galmuri11.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C35FC86C289416CB0037F07C /* Galmuri11.woff2 */; };
+		C35FC8C3289416CB0037F07C /* Galmuri7.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C35FC86D289416CB0037F07C /* Galmuri7.woff2 */; };
+		C35FC8C4289416CB0037F07C /* Galmuri11-Condensed.bdf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC86E289416CB0037F07C /* Galmuri11-Condensed.bdf */; };
+		C35FC8C5289416CB0037F07C /* galmuri.css in Resources */ = {isa = PBXBuildFile; fileRef = C35FC86F289416CB0037F07C /* galmuri.css */; };
+		C35FC8C6289416CB0037F07C /* Galmuri.ttc in Resources */ = {isa = PBXBuildFile; fileRef = C35FC870289416CB0037F07C /* Galmuri.ttc */; };
+		C35FC8C7289416CB0037F07C /* Galmuri11-Bold.bdf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC871289416CB0037F07C /* Galmuri11-Bold.bdf */; };
+		C35FC8C8289416CB0037F07C /* Galmuri11.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC872289416CB0037F07C /* Galmuri11.ttf */; };
+		C35FC8C9289416CB0037F07C /* Galmuri7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC873289416CB0037F07C /* Galmuri7.ttf */; };
+		C35FC8CA289416CB0037F07C /* Galmuri9.bdf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC874289416CB0037F07C /* Galmuri9.bdf */; };
+		C35FC8CB289416CB0037F07C /* Galmuri11-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC875289416CB0037F07C /* Galmuri11-Bold.ttf */; };
+		C35FC8CC289416CB0037F07C /* Galmuri7.bdf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC876289416CB0037F07C /* Galmuri7.bdf */; };
+		C35FC8CD289416CB0037F07C /* Galmuri9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC877289416CB0037F07C /* Galmuri9.ttf */; };
+		C35FC8CE289416CB0037F07C /* Galmuri11.bdf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC878289416CB0037F07C /* Galmuri11.bdf */; };
+		C35FC8CF289416CB0037F07C /* Galmuri11-Bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C35FC879289416CB0037F07C /* Galmuri11-Bold.woff2 */; };
+		C35FC8D0289416CB0037F07C /* Galmuri11-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87A289416CB0037F07C /* Galmuri11-Condensed.ttf */; };
+		C35FC8D1289416CB0037F07C /* Galmuri9.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87B289416CB0037F07C /* Galmuri9.woff2 */; };
+		C35FC8D2289416CB0037F07C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87C289416CB0037F07C /* LICENSE.txt */; };
+		C35FC8D3289416CB0037F07C /* Galmuri11-Condensed.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87D289416CB0037F07C /* Galmuri11-Condensed.woff2 */; };
+		C35FC8D4289416CB0037F07C /* CNAME in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87E289416CB0037F07C /* CNAME */; };
+		C35FC8D5289416CB0037F07C /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = C35FC87F289416CB0037F07C /* .gitmodules */; };
+		C35FC8D6289416CB0037F07C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C35FC880289416CB0037F07C /* README.md */; };
+		C35FC8D7289416CB0037F07C /* en.html in Resources */ = {isa = PBXBuildFile; fileRef = C35FC882289416CB0037F07C /* en.html */; };
+		C35FC8D8289416CB0037F07C /* glyphs.html in Resources */ = {isa = PBXBuildFile; fileRef = C35FC883289416CB0037F07C /* glyphs.html */; };
+		C35FC8D9289416CB0037F07C /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = C35FC884289416CB0037F07C /* package-lock.json */; };
+		C35FC8DA289416CB0037F07C /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = C35FC885289416CB0037F07C /* package.json */; };
+		C35FC8DB289416CB0037F07C /* OFL-ko.md in Resources */ = {isa = PBXBuildFile; fileRef = C35FC886289416CB0037F07C /* OFL-ko.md */; };
+		C35FC8DC289416CB0037F07C /* FUNDING.yml in Resources */ = {isa = PBXBuildFile; fileRef = C35FC888289416CB0037F07C /* FUNDING.yml */; };
+		C35FC8DD289416CB0037F07C /* release.yml in Resources */ = {isa = PBXBuildFile; fileRef = C35FC88A289416CB0037F07C /* release.yml */; };
+		C35FC8DE289416CB0037F07C /* dependabot.yml in Resources */ = {isa = PBXBuildFile; fileRef = C35FC88B289416CB0037F07C /* dependabot.yml */; };
+		C35FC8DF289416CB0037F07C /* bitmap.ff in Resources */ = {isa = PBXBuildFile; fileRef = C35FC88D289416CB0037F07C /* bitmap.ff */; };
+		C35FC8E0289416CB0037F07C /* toss.svg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC88E289416CB0037F07C /* toss.svg */; };
+		C35FC8E1289416CB0037F07C /* g11.ini in Resources */ = {isa = PBXBuildFile; fileRef = C35FC88F289416CB0037F07C /* g11.ini */; };
+		C35FC8E2289416CB0037F07C /* g11b.fea in Resources */ = {isa = PBXBuildFile; fileRef = C35FC890289416CB0037F07C /* g11b.fea */; };
+		C35FC8E3289416CB0037F07C /* g11c.fea in Resources */ = {isa = PBXBuildFile; fileRef = C35FC891289416CB0037F07C /* g11c.fea */; };
+		C35FC8E4289416CB0037F07C /* noonnu.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC892289416CB0037F07C /* noonnu.png */; };
+		C35FC8E5289416CB0037F07C /* version.py in Resources */ = {isa = PBXBuildFile; fileRef = C35FC893289416CB0037F07C /* version.py */; };
+		C35FC8E6289416CB0037F07C /* g11.fea in Resources */ = {isa = PBXBuildFile; fileRef = C35FC894289416CB0037F07C /* g11.fea */; };
+		C35FC8E7289416CB0037F07C /* g11b.ini in Resources */ = {isa = PBXBuildFile; fileRef = C35FC895289416CB0037F07C /* g11b.ini */; };
+		C35FC8E8289416CB0037F07C /* g11c.ini in Resources */ = {isa = PBXBuildFile; fileRef = C35FC896289416CB0037F07C /* g11c.ini */; };
+		C35FC8E9289416CB0037F07C /* cover_light.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC897289416CB0037F07C /* cover_light.png */; };
+		C35FC8EA289416CB0037F07C /* g9.fea in Resources */ = {isa = PBXBuildFile; fileRef = C35FC898289416CB0037F07C /* g9.fea */; };
+		C35FC8EB289416CB0037F07C /* kakaopay.gif in Resources */ = {isa = PBXBuildFile; fileRef = C35FC899289416CB0037F07C /* kakaopay.gif */; };
+		C35FC8EC289416CB0037F07C /* worker.js in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89A289416CB0037F07C /* worker.js */; };
+		C35FC8ED289416CB0037F07C /* bdf.js in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89B289416CB0037F07C /* bdf.js */; };
+		C35FC8EE289416CB0037F07C /* fontforge.ff in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89C289416CB0037F07C /* fontforge.ff */; };
+		C35FC8EF289416CB0037F07C /* galmuri.svg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89D289416CB0037F07C /* galmuri.svg */; };
+		C35FC8F0289416CB0037F07C /* g9.ini in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89E289416CB0037F07C /* g9.ini */; };
+		C35FC8F1289416CB0037F07C /* q.svg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC89F289416CB0037F07C /* q.svg */; };
+		C35FC8F2289416CB0037F07C /* FontMenuNameDB in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A0289416CB0037F07C /* FontMenuNameDB */; };
+		C35FC8F3289416CB0037F07C /* cover_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A1289416CB0037F07C /* cover_dark.png */; };
+		C35FC8F4289416CB0037F07C /* g7.ini in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A2289416CB0037F07C /* g7.ini */; };
+		C35FC8F5289416CB0037F07C /* AdobeBlank.woff in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A3289416CB0037F07C /* AdobeBlank.woff */; };
+		C35FC8F6289416CB0037F07C /* g7.fea in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A4289416CB0037F07C /* g7.fea */; };
+		C35FC8F7289416CB0037F07C /* kakaopay.svg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A5289416CB0037F07C /* kakaopay.svg */; };
+		C35FC8F8289416CB0037F07C /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A6289416CB0037F07C /* style.css */; };
+		C35FC8F9289416CB0037F07C /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A7289416CB0037F07C /* cover.png */; };
+		C35FC8FA289416CB0037F07C /* bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A8289416CB0037F07C /* bgs.png */; };
+		C35FC8FB289416CB0037F07C /* sandoll.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8A9289416CB0037F07C /* sandoll.png */; };
+		C35FC8FC289416CB0037F07C /* 210105.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8AB289416CB0037F07C /* 210105.jpg */; };
+		C35FC8FD289416CB0037F07C /* 201221.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8AC289416CB0037F07C /* 201221.jpg */; };
+		C35FC8FE289416CB0037F07C /* 210302.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8AD289416CB0037F07C /* 210302.jpg */; };
+		C35FC8FF289416CB0037F07C /* 220507.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8AE289416CB0037F07C /* 220507.png */; };
+		C35FC900289416CB0037F07C /* 200223.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8AF289416CB0037F07C /* 200223.png */; };
+		C35FC901289416CB0037F07C /* 210223.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B0289416CB0037F07C /* 210223.jpg */; };
+		C35FC902289416CB0037F07C /* 200622.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B1289416CB0037F07C /* 200622.jpg */; };
+		C35FC903289416CB0037F07C /* 220621.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B2289416CB0037F07C /* 220621.jpg */; };
+		C35FC904289416CB0037F07C /* 220220.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B3289416CB0037F07C /* 220220.jpg */; };
+		C35FC905289416CB0037F07C /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B4289416CB0037F07C /* donate.png */; };
+		C35FC906289416CB0037F07C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B5289416CB0037F07C /* bg.png */; };
+		C35FC907289416CB0037F07C /* toss.gif in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B6289416CB0037F07C /* toss.gif */; };
+		C35FC908289416CB0037F07C /* OFL.md in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B7289416CB0037F07C /* OFL.md */; };
+		C35FC909289416CB0037F07C /* THIRD-PARTY-LICENSES.txt in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B8289416CB0037F07C /* THIRD-PARTY-LICENSES.txt */; };
+		C35FC90A289416CB0037F07C /* sponsors.md in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8B9289416CB0037F07C /* sponsors.md */; };
+		C35FC90B289416CB0037F07C /* Galmuri11.kbits in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8BB289416CB0037F07C /* Galmuri11.kbits */; };
+		C35FC90C289416CB0037F07C /* Galmuri7.kbits in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8BC289416CB0037F07C /* Galmuri7.kbits */; };
+		C35FC90D289416CB0037F07C /* Galmuri11-Bold.kbits in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8BD289416CB0037F07C /* Galmuri11-Bold.kbits */; };
+		C35FC90E289416CB0037F07C /* Galmuri9.kbits in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8BE289416CB0037F07C /* Galmuri9.kbits */; };
+		C35FC90F289416CB0037F07C /* Galmuri11-Condensed.kbits in Resources */ = {isa = PBXBuildFile; fileRef = C35FC8BF289416CB0037F07C /* Galmuri11-Condensed.kbits */; };
 		C362ADC3288A7A2B00A0D917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC2288A7A2B00A0D917 /* AppDelegate.swift */; };
 		C362ADC5288A7A2B00A0D917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC4288A7A2B00A0D917 /* SceneDelegate.swift */; };
 		C362ADC7288A7A2B00A0D917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362ADC6288A7A2B00A0D917 /* ViewController.swift */; };
@@ -28,6 +108,86 @@
 
 /* Begin PBXFileReference section */
 		C34C2D34288D52B300866432 /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
+		C35FC869289416CB0037F07C /* .npmignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .npmignore; sourceTree = "<group>"; };
+		C35FC86A289416CB0037F07C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C35FC86C289416CB0037F07C /* Galmuri11.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri11.woff2; sourceTree = "<group>"; };
+		C35FC86D289416CB0037F07C /* Galmuri7.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri7.woff2; sourceTree = "<group>"; };
+		C35FC86E289416CB0037F07C /* Galmuri11-Condensed.bdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Galmuri11-Condensed.bdf"; sourceTree = "<group>"; };
+		C35FC86F289416CB0037F07C /* galmuri.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = galmuri.css; sourceTree = "<group>"; };
+		C35FC870289416CB0037F07C /* Galmuri.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri.ttc; sourceTree = "<group>"; };
+		C35FC871289416CB0037F07C /* Galmuri11-Bold.bdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Galmuri11-Bold.bdf"; sourceTree = "<group>"; };
+		C35FC872289416CB0037F07C /* Galmuri11.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri11.ttf; sourceTree = "<group>"; };
+		C35FC873289416CB0037F07C /* Galmuri7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri7.ttf; sourceTree = "<group>"; };
+		C35FC874289416CB0037F07C /* Galmuri9.bdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Galmuri9.bdf; sourceTree = "<group>"; };
+		C35FC875289416CB0037F07C /* Galmuri11-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Bold.ttf"; sourceTree = "<group>"; };
+		C35FC876289416CB0037F07C /* Galmuri7.bdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Galmuri7.bdf; sourceTree = "<group>"; };
+		C35FC877289416CB0037F07C /* Galmuri9.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri9.ttf; sourceTree = "<group>"; };
+		C35FC878289416CB0037F07C /* Galmuri11.bdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Galmuri11.bdf; sourceTree = "<group>"; };
+		C35FC879289416CB0037F07C /* Galmuri11-Bold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Bold.woff2"; sourceTree = "<group>"; };
+		C35FC87A289416CB0037F07C /* Galmuri11-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Condensed.ttf"; sourceTree = "<group>"; };
+		C35FC87B289416CB0037F07C /* Galmuri9.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri9.woff2; sourceTree = "<group>"; };
+		C35FC87C289416CB0037F07C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C35FC87D289416CB0037F07C /* Galmuri11-Condensed.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Condensed.woff2"; sourceTree = "<group>"; };
+		C35FC87E289416CB0037F07C /* CNAME */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNAME; sourceTree = "<group>"; };
+		C35FC87F289416CB0037F07C /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		C35FC880289416CB0037F07C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C35FC882289416CB0037F07C /* en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = en.html; sourceTree = "<group>"; };
+		C35FC883289416CB0037F07C /* glyphs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = glyphs.html; sourceTree = "<group>"; };
+		C35FC884289416CB0037F07C /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
+		C35FC885289416CB0037F07C /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		C35FC886289416CB0037F07C /* OFL-ko.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "OFL-ko.md"; sourceTree = "<group>"; };
+		C35FC888289416CB0037F07C /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		C35FC88A289416CB0037F07C /* release.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = release.yml; sourceTree = "<group>"; };
+		C35FC88B289416CB0037F07C /* dependabot.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = dependabot.yml; sourceTree = "<group>"; };
+		C35FC88D289416CB0037F07C /* bitmap.ff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitmap.ff; sourceTree = "<group>"; };
+		C35FC88E289416CB0037F07C /* toss.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toss.svg; sourceTree = "<group>"; };
+		C35FC88F289416CB0037F07C /* g11.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11.ini; sourceTree = "<group>"; };
+		C35FC890289416CB0037F07C /* g11b.fea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11b.fea; sourceTree = "<group>"; };
+		C35FC891289416CB0037F07C /* g11c.fea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11c.fea; sourceTree = "<group>"; };
+		C35FC892289416CB0037F07C /* noonnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noonnu.png; sourceTree = "<group>"; };
+		C35FC893289416CB0037F07C /* version.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = version.py; sourceTree = "<group>"; };
+		C35FC894289416CB0037F07C /* g11.fea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11.fea; sourceTree = "<group>"; };
+		C35FC895289416CB0037F07C /* g11b.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11b.ini; sourceTree = "<group>"; };
+		C35FC896289416CB0037F07C /* g11c.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g11c.ini; sourceTree = "<group>"; };
+		C35FC897289416CB0037F07C /* cover_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_light.png; sourceTree = "<group>"; };
+		C35FC898289416CB0037F07C /* g9.fea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g9.fea; sourceTree = "<group>"; };
+		C35FC899289416CB0037F07C /* kakaopay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kakaopay.gif; sourceTree = "<group>"; };
+		C35FC89A289416CB0037F07C /* worker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = worker.js; sourceTree = "<group>"; };
+		C35FC89B289416CB0037F07C /* bdf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bdf.js; sourceTree = "<group>"; };
+		C35FC89C289416CB0037F07C /* fontforge.ff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fontforge.ff; sourceTree = "<group>"; };
+		C35FC89D289416CB0037F07C /* galmuri.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = galmuri.svg; sourceTree = "<group>"; };
+		C35FC89E289416CB0037F07C /* g9.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g9.ini; sourceTree = "<group>"; };
+		C35FC89F289416CB0037F07C /* q.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = q.svg; sourceTree = "<group>"; };
+		C35FC8A0289416CB0037F07C /* FontMenuNameDB */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FontMenuNameDB; sourceTree = "<group>"; };
+		C35FC8A1289416CB0037F07C /* cover_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_dark.png; sourceTree = "<group>"; };
+		C35FC8A2289416CB0037F07C /* g7.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g7.ini; sourceTree = "<group>"; };
+		C35FC8A3289416CB0037F07C /* AdobeBlank.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdobeBlank.woff; sourceTree = "<group>"; };
+		C35FC8A4289416CB0037F07C /* g7.fea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = g7.fea; sourceTree = "<group>"; };
+		C35FC8A5289416CB0037F07C /* kakaopay.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kakaopay.svg; sourceTree = "<group>"; };
+		C35FC8A6289416CB0037F07C /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		C35FC8A7289416CB0037F07C /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		C35FC8A8289416CB0037F07C /* bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgs.png; sourceTree = "<group>"; };
+		C35FC8A9289416CB0037F07C /* sandoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandoll.png; sourceTree = "<group>"; };
+		C35FC8AB289416CB0037F07C /* 210105.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 210105.jpg; sourceTree = "<group>"; };
+		C35FC8AC289416CB0037F07C /* 201221.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 201221.jpg; sourceTree = "<group>"; };
+		C35FC8AD289416CB0037F07C /* 210302.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 210302.jpg; sourceTree = "<group>"; };
+		C35FC8AE289416CB0037F07C /* 220507.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 220507.png; sourceTree = "<group>"; };
+		C35FC8AF289416CB0037F07C /* 200223.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200223.png; sourceTree = "<group>"; };
+		C35FC8B0289416CB0037F07C /* 210223.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 210223.jpg; sourceTree = "<group>"; };
+		C35FC8B1289416CB0037F07C /* 200622.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 200622.jpg; sourceTree = "<group>"; };
+		C35FC8B2289416CB0037F07C /* 220621.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 220621.jpg; sourceTree = "<group>"; };
+		C35FC8B3289416CB0037F07C /* 220220.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 220220.jpg; sourceTree = "<group>"; };
+		C35FC8B4289416CB0037F07C /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
+		C35FC8B5289416CB0037F07C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C35FC8B6289416CB0037F07C /* toss.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toss.gif; sourceTree = "<group>"; };
+		C35FC8B7289416CB0037F07C /* OFL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = OFL.md; sourceTree = "<group>"; };
+		C35FC8B8289416CB0037F07C /* THIRD-PARTY-LICENSES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "THIRD-PARTY-LICENSES.txt"; sourceTree = "<group>"; };
+		C35FC8B9289416CB0037F07C /* sponsors.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = sponsors.md; sourceTree = "<group>"; };
+		C35FC8BB289416CB0037F07C /* Galmuri11.kbits */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri11.kbits; sourceTree = "<group>"; };
+		C35FC8BC289416CB0037F07C /* Galmuri7.kbits */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri7.kbits; sourceTree = "<group>"; };
+		C35FC8BD289416CB0037F07C /* Galmuri11-Bold.kbits */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Bold.kbits"; sourceTree = "<group>"; };
+		C35FC8BE289416CB0037F07C /* Galmuri9.kbits */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri9.kbits; sourceTree = "<group>"; };
+		C35FC8BF289416CB0037F07C /* Galmuri11-Condensed.kbits */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Condensed.kbits"; sourceTree = "<group>"; };
 		C362ADBF288A7A2B00A0D917 /* TamagotchiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamagotchiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C362ADC2288A7A2B00A0D917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C362ADC4288A7A2B00A0D917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +227,157 @@
 			path = ChangeNickName;
 			sourceTree = "<group>";
 		};
+		C35FC867289416AF0037F07C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC868289416CB0037F07C /* galmuri-2.32.4 */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C35FC868289416CB0037F07C /* galmuri-2.32.4 */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC869289416CB0037F07C /* .npmignore */,
+				C35FC86A289416CB0037F07C /* index.html */,
+				C35FC86B289416CB0037F07C /* dist */,
+				C35FC87E289416CB0037F07C /* CNAME */,
+				C35FC87F289416CB0037F07C /* .gitmodules */,
+				C35FC880289416CB0037F07C /* README.md */,
+				C35FC881289416CB0037F07C /* bitsnpicas */,
+				C35FC882289416CB0037F07C /* en.html */,
+				C35FC883289416CB0037F07C /* glyphs.html */,
+				C35FC884289416CB0037F07C /* package-lock.json */,
+				C35FC885289416CB0037F07C /* package.json */,
+				C35FC886289416CB0037F07C /* OFL-ko.md */,
+				C35FC887289416CB0037F07C /* .github */,
+				C35FC88C289416CB0037F07C /* files */,
+				C35FC8B7289416CB0037F07C /* OFL.md */,
+				C35FC8B8289416CB0037F07C /* THIRD-PARTY-LICENSES.txt */,
+				C35FC8B9289416CB0037F07C /* sponsors.md */,
+				C35FC8BA289416CB0037F07C /* src */,
+			);
+			path = "galmuri-2.32.4";
+			sourceTree = "<group>";
+		};
+		C35FC86B289416CB0037F07C /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC86C289416CB0037F07C /* Galmuri11.woff2 */,
+				C35FC86D289416CB0037F07C /* Galmuri7.woff2 */,
+				C35FC86E289416CB0037F07C /* Galmuri11-Condensed.bdf */,
+				C35FC86F289416CB0037F07C /* galmuri.css */,
+				C35FC870289416CB0037F07C /* Galmuri.ttc */,
+				C35FC871289416CB0037F07C /* Galmuri11-Bold.bdf */,
+				C35FC872289416CB0037F07C /* Galmuri11.ttf */,
+				C35FC873289416CB0037F07C /* Galmuri7.ttf */,
+				C35FC874289416CB0037F07C /* Galmuri9.bdf */,
+				C35FC875289416CB0037F07C /* Galmuri11-Bold.ttf */,
+				C35FC876289416CB0037F07C /* Galmuri7.bdf */,
+				C35FC877289416CB0037F07C /* Galmuri9.ttf */,
+				C35FC878289416CB0037F07C /* Galmuri11.bdf */,
+				C35FC879289416CB0037F07C /* Galmuri11-Bold.woff2 */,
+				C35FC87A289416CB0037F07C /* Galmuri11-Condensed.ttf */,
+				C35FC87B289416CB0037F07C /* Galmuri9.woff2 */,
+				C35FC87C289416CB0037F07C /* LICENSE.txt */,
+				C35FC87D289416CB0037F07C /* Galmuri11-Condensed.woff2 */,
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
+		C35FC881289416CB0037F07C /* bitsnpicas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bitsnpicas;
+			sourceTree = "<group>";
+		};
+		C35FC887289416CB0037F07C /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC888289416CB0037F07C /* FUNDING.yml */,
+				C35FC889289416CB0037F07C /* workflows */,
+				C35FC88B289416CB0037F07C /* dependabot.yml */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		C35FC889289416CB0037F07C /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC88A289416CB0037F07C /* release.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		C35FC88C289416CB0037F07C /* files */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC88D289416CB0037F07C /* bitmap.ff */,
+				C35FC88E289416CB0037F07C /* toss.svg */,
+				C35FC88F289416CB0037F07C /* g11.ini */,
+				C35FC890289416CB0037F07C /* g11b.fea */,
+				C35FC891289416CB0037F07C /* g11c.fea */,
+				C35FC892289416CB0037F07C /* noonnu.png */,
+				C35FC893289416CB0037F07C /* version.py */,
+				C35FC894289416CB0037F07C /* g11.fea */,
+				C35FC895289416CB0037F07C /* g11b.ini */,
+				C35FC896289416CB0037F07C /* g11c.ini */,
+				C35FC897289416CB0037F07C /* cover_light.png */,
+				C35FC898289416CB0037F07C /* g9.fea */,
+				C35FC899289416CB0037F07C /* kakaopay.gif */,
+				C35FC89A289416CB0037F07C /* worker.js */,
+				C35FC89B289416CB0037F07C /* bdf.js */,
+				C35FC89C289416CB0037F07C /* fontforge.ff */,
+				C35FC89D289416CB0037F07C /* galmuri.svg */,
+				C35FC89E289416CB0037F07C /* g9.ini */,
+				C35FC89F289416CB0037F07C /* q.svg */,
+				C35FC8A0289416CB0037F07C /* FontMenuNameDB */,
+				C35FC8A1289416CB0037F07C /* cover_dark.png */,
+				C35FC8A2289416CB0037F07C /* g7.ini */,
+				C35FC8A3289416CB0037F07C /* AdobeBlank.woff */,
+				C35FC8A4289416CB0037F07C /* g7.fea */,
+				C35FC8A5289416CB0037F07C /* kakaopay.svg */,
+				C35FC8A6289416CB0037F07C /* style.css */,
+				C35FC8A7289416CB0037F07C /* cover.png */,
+				C35FC8A8289416CB0037F07C /* bgs.png */,
+				C35FC8A9289416CB0037F07C /* sandoll.png */,
+				C35FC8AA289416CB0037F07C /* showcase */,
+				C35FC8B4289416CB0037F07C /* donate.png */,
+				C35FC8B5289416CB0037F07C /* bg.png */,
+				C35FC8B6289416CB0037F07C /* toss.gif */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		C35FC8AA289416CB0037F07C /* showcase */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC8AB289416CB0037F07C /* 210105.jpg */,
+				C35FC8AC289416CB0037F07C /* 201221.jpg */,
+				C35FC8AD289416CB0037F07C /* 210302.jpg */,
+				C35FC8AE289416CB0037F07C /* 220507.png */,
+				C35FC8AF289416CB0037F07C /* 200223.png */,
+				C35FC8B0289416CB0037F07C /* 210223.jpg */,
+				C35FC8B1289416CB0037F07C /* 200622.jpg */,
+				C35FC8B2289416CB0037F07C /* 220621.jpg */,
+				C35FC8B3289416CB0037F07C /* 220220.jpg */,
+			);
+			path = showcase;
+			sourceTree = "<group>";
+		};
+		C35FC8BA289416CB0037F07C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C35FC8BB289416CB0037F07C /* Galmuri11.kbits */,
+				C35FC8BC289416CB0037F07C /* Galmuri7.kbits */,
+				C35FC8BD289416CB0037F07C /* Galmuri11-Bold.kbits */,
+				C35FC8BE289416CB0037F07C /* Galmuri9.kbits */,
+				C35FC8BF289416CB0037F07C /* Galmuri11-Condensed.kbits */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		C362ADB6288A7A2B00A0D917 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +397,7 @@
 		C362ADC1288A7A2B00A0D917 /* TamagotchiProject */ = {
 			isa = PBXGroup;
 			children = (
+				C35FC867289416AF0037F07C /* Font */,
 				C34C2D31288D526D00866432 /* ChangeNickName */,
 				C362ADE0288AAD6900A0D917 /* Alert */,
 				C362ADD9288A921D00A0D917 /* SettingView */,
@@ -209,10 +521,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35FC902289416CB0037F07C /* 200622.jpg in Resources */,
+				C35FC8E6289416CB0037F07C /* g11.fea in Resources */,
+				C35FC8EB289416CB0037F07C /* kakaopay.gif in Resources */,
+				C35FC8C4289416CB0037F07C /* Galmuri11-Condensed.bdf in Resources */,
+				C35FC8EC289416CB0037F07C /* worker.js in Resources */,
+				C35FC8E5289416CB0037F07C /* version.py in Resources */,
+				C35FC8C6289416CB0037F07C /* Galmuri.ttc in Resources */,
+				C35FC8FE289416CB0037F07C /* 210302.jpg in Resources */,
+				C35FC8D1289416CB0037F07C /* Galmuri9.woff2 in Resources */,
+				C35FC8F0289416CB0037F07C /* g9.ini in Resources */,
+				C35FC8CA289416CB0037F07C /* Galmuri9.bdf in Resources */,
+				C35FC8E9289416CB0037F07C /* cover_light.png in Resources */,
+				C35FC904289416CB0037F07C /* 220220.jpg in Resources */,
+				C35FC8E1289416CB0037F07C /* g11.ini in Resources */,
+				C35FC8D8289416CB0037F07C /* glyphs.html in Resources */,
+				C35FC909289416CB0037F07C /* THIRD-PARTY-LICENSES.txt in Resources */,
+				C35FC8C3289416CB0037F07C /* Galmuri7.woff2 in Resources */,
+				C35FC8DD289416CB0037F07C /* release.yml in Resources */,
+				C35FC8F5289416CB0037F07C /* AdobeBlank.woff in Resources */,
+				C35FC8C2289416CB0037F07C /* Galmuri11.woff2 in Resources */,
+				C35FC8F6289416CB0037F07C /* g7.fea in Resources */,
+				C35FC906289416CB0037F07C /* bg.png in Resources */,
+				C35FC90D289416CB0037F07C /* Galmuri11-Bold.kbits in Resources */,
+				C35FC907289416CB0037F07C /* toss.gif in Resources */,
+				C35FC8D3289416CB0037F07C /* Galmuri11-Condensed.woff2 in Resources */,
+				C35FC8C5289416CB0037F07C /* galmuri.css in Resources */,
+				C35FC8C7289416CB0037F07C /* Galmuri11-Bold.bdf in Resources */,
+				C35FC8D7289416CB0037F07C /* en.html in Resources */,
+				C35FC8C0289416CB0037F07C /* .npmignore in Resources */,
 				C362ADCF288A7A2C00A0D917 /* LaunchScreen.storyboard in Resources */,
+				C35FC8E7289416CB0037F07C /* g11b.ini in Resources */,
+				C35FC908289416CB0037F07C /* OFL.md in Resources */,
+				C35FC8FF289416CB0037F07C /* 220507.png in Resources */,
+				C35FC8D0289416CB0037F07C /* Galmuri11-Condensed.ttf in Resources */,
+				C35FC90C289416CB0037F07C /* Galmuri7.kbits in Resources */,
+				C35FC8E8289416CB0037F07C /* g11c.ini in Resources */,
+				C35FC8FC289416CB0037F07C /* 210105.jpg in Resources */,
+				C35FC90E289416CB0037F07C /* Galmuri9.kbits in Resources */,
+				C35FC8D4289416CB0037F07C /* CNAME in Resources */,
+				C35FC90F289416CB0037F07C /* Galmuri11-Condensed.kbits in Resources */,
+				C35FC8DE289416CB0037F07C /* dependabot.yml in Resources */,
+				C35FC901289416CB0037F07C /* 210223.jpg in Resources */,
+				C35FC8DA289416CB0037F07C /* package.json in Resources */,
+				C35FC8DB289416CB0037F07C /* OFL-ko.md in Resources */,
+				C35FC8C9289416CB0037F07C /* Galmuri7.ttf in Resources */,
+				C35FC8F7289416CB0037F07C /* kakaopay.svg in Resources */,
+				C35FC905289416CB0037F07C /* donate.png in Resources */,
+				C35FC8FD289416CB0037F07C /* 201221.jpg in Resources */,
+				C35FC8F8289416CB0037F07C /* style.css in Resources */,
+				C35FC8EA289416CB0037F07C /* g9.fea in Resources */,
+				C35FC8F1289416CB0037F07C /* q.svg in Resources */,
+				C35FC8DF289416CB0037F07C /* bitmap.ff in Resources */,
+				C35FC8CE289416CB0037F07C /* Galmuri11.bdf in Resources */,
+				C35FC8D9289416CB0037F07C /* package-lock.json in Resources */,
+				C35FC8D6289416CB0037F07C /* README.md in Resources */,
 				C362ADCC288A7A2C00A0D917 /* Assets.xcassets in Resources */,
+				C35FC903289416CB0037F07C /* 220621.jpg in Resources */,
+				C35FC8F4289416CB0037F07C /* g7.ini in Resources */,
+				C35FC8CC289416CB0037F07C /* Galmuri7.bdf in Resources */,
+				C35FC8CD289416CB0037F07C /* Galmuri9.ttf in Resources */,
+				C35FC8FB289416CB0037F07C /* sandoll.png in Resources */,
+				C35FC8E4289416CB0037F07C /* noonnu.png in Resources */,
+				C35FC8D5289416CB0037F07C /* .gitmodules in Resources */,
+				C35FC8EF289416CB0037F07C /* galmuri.svg in Resources */,
+				C35FC8D2289416CB0037F07C /* LICENSE.txt in Resources */,
+				C35FC90B289416CB0037F07C /* Galmuri11.kbits in Resources */,
+				C35FC8C8289416CB0037F07C /* Galmuri11.ttf in Resources */,
+				C35FC8EE289416CB0037F07C /* fontforge.ff in Resources */,
+				C35FC8CF289416CB0037F07C /* Galmuri11-Bold.woff2 in Resources */,
+				C35FC8DC289416CB0037F07C /* FUNDING.yml in Resources */,
+				C35FC8F9289416CB0037F07C /* cover.png in Resources */,
+				C35FC8E2289416CB0037F07C /* g11b.fea in Resources */,
+				C35FC90A289416CB0037F07C /* sponsors.md in Resources */,
+				C35FC8C1289416CB0037F07C /* index.html in Resources */,
 				C362ADE2288AAD8400A0D917 /* CustomAlertView.xib in Resources */,
+				C35FC8F3289416CB0037F07C /* cover_dark.png in Resources */,
+				C35FC8ED289416CB0037F07C /* bdf.js in Resources */,
+				C35FC900289416CB0037F07C /* 200223.png in Resources */,
+				C35FC8FA289416CB0037F07C /* bgs.png in Resources */,
+				C35FC8F2289416CB0037F07C /* FontMenuNameDB in Resources */,
 				C362ADCA288A7A2B00A0D917 /* Main.storyboard in Resources */,
+				C35FC8E0289416CB0037F07C /* toss.svg in Resources */,
+				C35FC8E3289416CB0037F07C /* g11c.fea in Resources */,
+				C35FC8CB289416CB0037F07C /* Galmuri11-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

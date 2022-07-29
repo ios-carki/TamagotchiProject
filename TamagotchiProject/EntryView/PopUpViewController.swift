@@ -19,6 +19,7 @@ class PopUpViewController: UIViewController {
     var imageRepo: String? //받아오는 캐릭터이미지
     var lableRepo: String? //받아오는 캐릭터이름
     var introduceRepo: String? //받아오는 캐릭터소개
+    var fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)//폰트
     
     @IBOutlet weak var charImage: UIImageView!
     @IBOutlet weak var cancelButton: UIButton!
@@ -51,6 +52,7 @@ class PopUpViewController: UIViewController {
         loadName.text = lableRepo
         loadName.textColor = fontColorSet
         loadName.textAlignment = .center
+        loadName.font = fontFamily
         loadName.layer.cornerRadius = 5
         loadName.layer.borderWidth = 1
         loadName.backgroundColor = backgroundColorSet
@@ -62,7 +64,7 @@ class PopUpViewController: UIViewController {
         labelName.text = introduceRepo
         labelName.textColor = fontColorSet
         labelName.textAlignment = .center
-        labelName.font = .boldSystemFont(ofSize: 15)
+        labelName.font = fontFamily
     }
     
     //경계선 표현

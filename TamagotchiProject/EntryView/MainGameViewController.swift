@@ -20,6 +20,7 @@ class MainGameViewController: UIViewController {
     
      
     var tamagochiList = tamagochiDetail()
+    var fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
     
     @IBOutlet weak var textBackGroundImageView: UIImageView!//말풍선 이미지뷰
     @IBOutlet weak var textOnImageLabel: UILabel!//말풍선 텍스트 레이블
@@ -82,6 +83,7 @@ class MainGameViewController: UIViewController {
         textOnImageLabel.text = "\(v1name)님 안녕하세요"
         textOnImageLabel.textColor = fontColorSet
         textOnImageLabel.textAlignment = .center
+        textOnImageLabel.font = fontFamily
 //        textOnImageLabel.sizeToFit() -> 객체에 딱 맞게 조정
         
         
@@ -143,6 +145,8 @@ class MainGameViewController: UIViewController {
     
     //다마고치 메인 이미지 초기화
     func gameChar(imageName: UIImageView) {
+        charNameLabel.font = fontFamily
+        
         if charNameLabel.text == "따끔따끔 다마고치" {
             characterSort = GameCharacter.dama1
             imageName.image = UIImage(named: "1-1")
@@ -159,7 +163,7 @@ class MainGameViewController: UIViewController {
     func charNameDesign(labelName: UILabel) {
         labelName.text = inGameCharName
         labelName.textColor = fontColorSet
-        labelName.font = .boldSystemFont(ofSize: 15)
+        labelName.font = fontFamily
         labelName.textAlignment = .center
         labelName.layer.borderWidth = 1
         labelName.layer.cornerRadius = 5

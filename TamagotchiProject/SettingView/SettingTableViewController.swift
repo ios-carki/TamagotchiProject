@@ -11,7 +11,7 @@ import UIKit
 class SettingTableViewController: UITableViewController {
     let backgroundColorSet = UIColor(red: 245/255, green: 252/255, blue: 252/255, alpha: 1)
     let fontColorSet = UIColor(red: 77/255, green: 106/255, blue: 120/255, alpha: 1)
-    
+    var fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
     
     static let identifier = "SettingTableViewController"
     var settingList = ["내 이름 설정하기", "다마고치 변경하기", "데이터 초기화"]
@@ -48,7 +48,7 @@ class SettingTableViewController: UITableViewController {
         
         cell.menuNameLabel.text = settingList[indexPath.row]
         cell.menuNameLabel.textColor = .black
-        cell.menuNameLabel.font = .boldSystemFont(ofSize: 15)
+        cell.menuNameLabel.font = fontFamily
         cell.leftImageView.image = UIImage(systemName: leftIconImage[indexPath.row])
         cell.leftImageView.tintColor = fontColorSet
         cell.rightLabel.text = rightTextLabel[indexPath.row]

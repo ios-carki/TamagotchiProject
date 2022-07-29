@@ -10,6 +10,7 @@ import UIKit
 class EntryCollectionViewCell: UICollectionViewCell {
     let fontColorSet = UIColor(red: 77/255, green: 106/255, blue: 120/255, alpha: 1)
     let backgroundColorSet = UIColor(red: 245/255, green: 252/255, blue: 252/255, alpha: 1)
+    let fontFamily = UIFont(name: "Galmuri11-Regular", size: 10)
 
     
     @IBOutlet weak var tamagochiImage: UIImageView!
@@ -20,7 +21,7 @@ class EntryCollectionViewCell: UICollectionViewCell {
         tamagochiImage.contentMode = .scaleAspectFit
         
         tamagochiName.text = data.name
-        tamagochiName.font = .boldSystemFont(ofSize: 13)
+        tamagochiName.font = fontFamily
         tamagochiName.textAlignment = .center
         tamagochiName.textColor = fontColorSet
         tamagochiName.layer.cornerRadius = 5
