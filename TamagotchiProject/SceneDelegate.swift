@@ -13,10 +13,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        for key in UserDefaults.standard.dictionaryRepresentation().keys {
-                    UserDefaults.standard.removeObject(forKey: key.description)
-                }
-        guard let _ = (scene as? UIWindowScene) else { return }
+//        for key in UserDefaults.standard.dictionaryRepresentation().keys {
+//                    UserDefaults.standard.removeObject(forKey: key.description)
+//                }
+//        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if UserDefaults.standard.bool(forKey: "First") == true {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "MainGameViewController") as! MainGameViewController
+            let nav = UINavigationController(rootViewController: vc)
+            
+            window?.rootViewController = nav
+        }else {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "EntryCollectionViewController") as! EntryCollectionViewController
+            window?.rootViewController = UINavigationController(rootViewController: vc)
+        }
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

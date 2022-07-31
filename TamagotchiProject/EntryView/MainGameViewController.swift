@@ -55,6 +55,7 @@ class MainGameViewController: UIViewController {
     var loadRice = 0
     var loadWater = 0
     
+    //수정부분
     var WaterCount = UserDefaults.standard.value(forKey: "Water") as! Int
     var RiceCount = UserDefaults.standard.value(forKey: "Rice") as! Int
     var LevelCount = UserDefaults.standard.value(forKey: "Level") as! Int
@@ -364,6 +365,8 @@ class MainGameViewController: UIViewController {
                 charLevelLabel.text = "LV\(LevelCount)"
             }
         }
+        UserDefaults.standard.set(LevelCount, forKey: "Level") // 레벨 유저 디폴트
+        UserDefaults.standard.set(charinGameImage, forKey: "CharImage")
 
     }
     
@@ -378,6 +381,7 @@ class MainGameViewController: UIViewController {
             RiceCount += 1
         }
         numOfRiceLabel.text = "- 밥알 \(RiceCount)개 -"
+        UserDefaults.standard.set(RiceCount, forKey: "Rice") //쌀 개수 유저 디폴트
         
 //        countingFunc(addedObject: addedRice!)
         countFunc()
@@ -398,6 +402,7 @@ class MainGameViewController: UIViewController {
             WaterCount += 1
         }
         numOfWaterLabel.text = "물방울 \(WaterCount)개"
+        UserDefaults.standard.set(WaterCount, forKey: "Water") //물 개수 유저 디폴트
         
 //        countingFunc(addedObject: addedWater!)
         countFunc()

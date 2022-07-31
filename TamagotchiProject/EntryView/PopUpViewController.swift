@@ -108,6 +108,9 @@ class PopUpViewController: UIViewController {
         vc.RiceCount = UserDefaults.standard.integer(forKey: "Rice")
         vc.WaterCount = UserDefaults.standard.integer(forKey: "Water")
         vc.v1name = UserDefaults.standard.string(forKey: "Name") ?? "왜안돼"
+//        vc.charinGameImage = UserDefaults.standard.string(forKey: "CharImage")
+        
+        UserDefaults.standard.set(true, forKey: "First")
 
         self.present(nav, animated: false)
     }
