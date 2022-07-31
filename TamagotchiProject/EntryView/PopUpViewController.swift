@@ -104,11 +104,13 @@ class PopUpViewController: UIViewController {
         nav.modalPresentationStyle = .fullScreen
         
         vc.inGameCharName = lableRepo
+        UserDefaults.standard.set(lableRepo, forKey: "damaName")
         vc.LevelCount = UserDefaults.standard.integer(forKey: "Level")
         vc.RiceCount = UserDefaults.standard.integer(forKey: "Rice")
         vc.WaterCount = UserDefaults.standard.integer(forKey: "Water")
         vc.v1name = UserDefaults.standard.string(forKey: "Name") ?? "왜안돼"
-//        vc.charinGameImage = UserDefaults.standard.string(forKey: "CharImage")
+        
+//        UserDefaults.standard.string(forKey: "CharImage")
         
         UserDefaults.standard.set(true, forKey: "First")
 

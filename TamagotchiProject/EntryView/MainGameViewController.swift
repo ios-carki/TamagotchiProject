@@ -21,6 +21,7 @@ class MainGameViewController: UIViewController {
      
     var tamagochiList = tamagochiDetail()
     var fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
+    var damaNum = 0 //func gameChar()
     
     @IBOutlet weak var textBackGroundImageView: UIImageView!//말풍선 이미지뷰
     @IBOutlet weak var textOnImageLabel: UILabel!//말풍선 텍스트 레이블
@@ -44,14 +45,13 @@ class MainGameViewController: UIViewController {
     @IBOutlet weak var settingBarButton: UIBarButtonItem!//설정 바 버튼 아이템
     
     var inGameCharImage: String?
-    var inGameCharName: String?
+    var inGameCharName: String? = UserDefaults.standard.string(forKey: "damaName")
     var keyHeight: CGFloat? //키보드 높이
     
     var characterSort: GameCharacter = .dama1
     
     //레벨1, 밥알0, 물0 테이블뷰 타이틀 이름초기화
-
-    var loadLevel = 0
+    var loadLevel = 1
     var loadRice = 0
     var loadWater = 0
     
@@ -92,7 +92,7 @@ class MainGameViewController: UIViewController {
         charNameDesign(labelName: charNameLabel)
         
         //메인게임 다마고치 이미지
-        gameChar(imageName: charinGameImage)
+//        gameChar(imageName: charinGameImage)
         
         //키보드가 나타나고 사라질때
 //        addKeyBoardListener()
@@ -100,7 +100,7 @@ class MainGameViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
 
         v1name = UserDefaults.standard.value(forKey: "Name") as! String
         navigationItem.title = "\(v1name)님의 다마고치"
@@ -121,27 +121,8 @@ class MainGameViewController: UIViewController {
         }else if charNameLabel.text == "반짝반짝 다마고치" {
             charinGameImage.image = UIImage(named: "3-\(imageTag)")
         }
+        gameChar(imageName: charinGameImage)
     }
-    
-//    func addKeyBoardListener() {
-//            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil);
-//            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil);
-//    }
-//        
-//    @objc func keyboardWillShow(_ sender: Notification) {
-//           let userInfo:NSDictionary = sender.userInfo! as NSDictionary
-//           let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
-//           let keyboardRectangle = keyboardFrame.cgRectValue
-//           let keyboardHeight = keyboardRectangle.height
-//           keyHeight = keyboardHeight
-//
-//           self.view.frame.size.height -= keyboardHeight
-//       }
-//    
-//    @objc func keyboardWillHide(_ sender: Notification) {
-//            
-//            self.view.frame.size.height += keyHeight!
-//        }
     
     
     //다마고치 메인 이미지 초기화
@@ -149,15 +130,24 @@ class MainGameViewController: UIViewController {
         charNameLabel.font = fontFamily
         
         if charNameLabel.text == "따끔따끔 다마고치" {
+            damaNum = 1
             characterSort = GameCharacter.dama1
-            imageName.image = UIImage(named: "1-1")
+            imageName.image = UIImage(named: "1-\(LevelCount)")
+//            UserDefaults.standard.set(charNameLabel, forKey: "damaName")
         }else if charNameLabel.text == "방실방실 다마고치" {
+            damaNum = 2
             characterSort = GameCharacter.dama2
-            imageName.image = UIImage(named: "2-1")
+            imageName.image = UIImage(named: "2-\(LevelCount)")
+//            UserDefaults.standard.set(charNameLabel, forKey: "damaName")
         }else if charNameLabel.text == "반짝반짝 다마고치" {
+            damaNum = 3
             characterSort = GameCharacter.dama3
-            imageName.image = UIImage(named: "3-1")
+            imageName.image = UIImage(named: "3-\(LevelCount)")
+//            UserDefaults.standard.set(charNameLabel, forKey: "damaName")
         }
+        UserDefaults.standard.set(charNameLabel.text, forKey: "damaName")
+        print(UserDefaults.standard.string(forKey: "damaName"))
+        //다마고치 이름을 받아오는
     }
     
     //다마고치 이름 디자인
@@ -235,142 +225,29 @@ class MainGameViewController: UIViewController {
 
     //fomula 값에 따른 캐릭터 성장 이미지 변화
     func countFunc() {
-
-        switch characterSort {
-        case .dama1://1번 캐릭터
-            if formula() == 1 {
-                LevelCount = 1
-                charinGameImage.image = UIImage(named: "1-1")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 2 {
-                LevelCount = 2
-                charinGameImage.image = UIImage(named: "1-2")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 3 {
-                LevelCount = 3
-                charinGameImage.image = UIImage(named: "1-3")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 4 {
-                LevelCount = 4
-                charinGameImage.image = UIImage(named: "1-4")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 5 {
-                LevelCount = 5
-                charinGameImage.image = UIImage(named: "1-5")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 6 {
-                LevelCount = 6
-                charinGameImage.image = UIImage(named: "1-6")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 7 {
-                LevelCount = 7
-                charinGameImage.image = UIImage(named: "1-7")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 8 {
-                LevelCount = 8
-                charinGameImage.image = UIImage(named: "1-8")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 9 {
-                LevelCount = 9
-                charinGameImage.image = UIImage(named: "1-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else {
-                LevelCount = 10
-                charinGameImage.image = UIImage(named: "1-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-                
-            }
-        case .dama2://2번
-            if formula() == 1 {
-                LevelCount = 1
-                charinGameImage.image = UIImage(named: "2-1")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 2 {
-                LevelCount = 2
-                charinGameImage.image = UIImage(named: "2-2")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 3 {
-                LevelCount = 3
-                charinGameImage.image = UIImage(named: "2-3")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 4 {
-                LevelCount = 4
-                charinGameImage.image = UIImage(named: "2-4")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 5 {
-                LevelCount = 5
-                charinGameImage.image = UIImage(named: "2-5")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 6 {
-                LevelCount = 6
-                charinGameImage.image = UIImage(named: "2-6")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 7 {
-                LevelCount = 7
-                charinGameImage.image = UIImage(named: "2-7")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 8 {
-                LevelCount = 8
-                charinGameImage.image = UIImage(named: "2-8")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 9 {
-                LevelCount = 9
-                charinGameImage.image = UIImage(named: "2-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else {
-                LevelCount = 10
-                charinGameImage.image = UIImage(named: "2-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }
-        case .dama3://3번
-            if formula() == 1 {
-                LevelCount = 1
-                charinGameImage.image = UIImage(named: "3-1")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 2 {
-                LevelCount = 2
-                charinGameImage.image = UIImage(named: "3-2")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 3 {
-                LevelCount = 3
-                charinGameImage.image = UIImage(named: "3-3")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 4 {
-                LevelCount = 4
-                charinGameImage.image = UIImage(named: "3-4")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 5 {
-                LevelCount = 5
-                charinGameImage.image = UIImage(named: "3-5")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 6 {
-                LevelCount = 6
-                charinGameImage.image = UIImage(named: "3-6")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 7 {
-                LevelCount = 7
-                charinGameImage.image = UIImage(named: "3-7")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 8 {
-                LevelCount = 8
-                charinGameImage.image = UIImage(named: "3-8")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else if formula() == 9 {
-                LevelCount = 9
-                charinGameImage.image = UIImage(named: "3-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }else {
-                LevelCount = 10
-                charinGameImage.image = UIImage(named: "3-9")
-                charLevelLabel.text = "LV\(LevelCount)"
-            }
+        
+        switch formula() {
+        case 0...1:
+            break
+        case 1...10:
+            LevelCount = formula()
+            charLevelLabel.text = "LV\(LevelCount)"
+            charinGameImage.image = UIImage(named: "\(damaNum)-\(LevelCount)")
+            
+        case 10:
+            LevelCount = formula()
+            charLevelLabel.text = "LV\(LevelCount)"
+            charinGameImage.image = UIImage(named: "\(damaNum)-\(LevelCount)")
+            
+        default:
+            break
         }
+        UserDefaults.standard.set(damaNum, forKey: "damaNum") // 다마고치 번호 유저 디폴트
         UserDefaults.standard.set(LevelCount, forKey: "Level") // 레벨 유저 디폴트
-        UserDefaults.standard.set(charinGameImage, forKey: "CharImage")
-
     }
     
     //밥주기 버튼
+
     @IBAction func riceButtonClicked(_ sender: UIButton) {
         let talkArr = ["물도 좀 주세요!", "밥맛이 좋네요", "배가 불러와요", "밥이 좀 식었어요"]
         let addedRice:Int? = Int(riceTextField.text!)
@@ -436,5 +313,6 @@ class MainGameViewController: UIViewController {
     
     
 }
+
 
 
