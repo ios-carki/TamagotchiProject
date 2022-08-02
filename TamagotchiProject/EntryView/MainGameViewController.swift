@@ -20,7 +20,6 @@ class MainGameViewController: UIViewController {
     
      
     var tamagochiList = tamagochiDetail()
-    var fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
     var damaNum = 0 //func gameChar()
     
     @IBOutlet weak var textBackGroundImageView: UIImageView!//말풍선 이미지뷰
@@ -66,7 +65,6 @@ class MainGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         //초기 캐릭터정보(1, 0, 0)
         defaultCharInfo(levelLabel: charLevelLabel, riceLabel: numOfRiceLabel, waterLabel: numOfWaterLabel)
         //밥주기, 물주기버튼 디자인
@@ -76,17 +74,9 @@ class MainGameViewController: UIViewController {
         //말풍선 이미지뷰
         textBackGroundImageView.image = UIImage(named: "bubble")
         
-        settingBarButton.image = UIImage(systemName: "person.circle")
-        settingBarButton.tintColor = fontColorSet
-        centerView.backgroundColor = backgroundColorSet
-        bottomView.backgroundColor = backgroundColorSet
-        view.backgroundColor = backgroundColorSet
-        textOnImageLabel.text = "\(v1name)님 안녕하세요"
-        textOnImageLabel.textColor = fontColorSet
-        textOnImageLabel.textAlignment = .center
-        textOnImageLabel.font = fontFamily
-//        textOnImageLabel.sizeToFit() -> 객체에 딱 맞게 조정
-        
+        barButtonItemDesign(barButtonName: settingBarButton)
+        uiViewDesign(uiviewName1: centerView, uiviewName2: bottomView, mainViewName: view)
+        textDesign(labelName: textOnImageLabel)
         
         //메인게임 받아온 캐릭터 이름
         charNameDesign(labelName: charNameLabel)
@@ -127,7 +117,9 @@ class MainGameViewController: UIViewController {
     
     //다마고치 메인 이미지 초기화
     func gameChar(imageName: UIImageView) {
-        charNameLabel.font = fontFamily
+        let colorSet = color()
+        
+        charNameLabel.font = colorSet.fontFamily
         
         if charNameLabel.text == "따끔따끔 다마고치" {
             damaNum = 1
@@ -148,18 +140,6 @@ class MainGameViewController: UIViewController {
         UserDefaults.standard.set(charNameLabel.text, forKey: "damaName")
         print(UserDefaults.standard.string(forKey: "damaName"))
         //다마고치 이름을 받아오는
-    }
-    
-    //다마고치 이름 디자인
-    func charNameDesign(labelName: UILabel) {
-        labelName.text = inGameCharName
-        labelName.textColor = fontColorSet
-        labelName.font = fontFamily
-        labelName.textAlignment = .center
-        labelName.layer.borderWidth = 1
-        labelName.layer.cornerRadius = 5
-        labelName.layer.backgroundColor = backgroundColorSet.cgColor
-        labelName.layer.borderColor = fontColorSet.cgColor
     }
     
     //초기 캐릭터 정보(레벨 1, 밥알 0개, 물통 0개)
@@ -223,6 +203,7 @@ class MainGameViewController: UIViewController {
         return level
     }
 
+    //피드백1 -> switch ~case(range())
     //fomula 값에 따른 캐릭터 성장 이미지 변화
     func countFunc() {
         
@@ -314,5 +295,56 @@ class MainGameViewController: UIViewController {
     
 }
 
+extension MainGameViewController {
+    
+    struct color {
+        let fontColorSet = UIColor(red: 77/255, green: 106/255, blue: 120/255, alpha: 1)
+        let backGroundColorSet = UIColor(red: 245/255, green: 252/255, blue: 252/255, alpha: 1)
+        let testRedColor = UIColor.red
+        
+        let fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
+    }
+    
+    
+    func barButtonItemDesign(barButtonName: UIBarButtonItem) {
+        let colorSet = color() // 중복될 메서드가 많을 것 같아서 extension 메인게임뷰의 저장 프로퍼티로 활용하자니 문법상 오류가 있고 -> 구조체 안에 포함시키는 방법이있나?
+        
+        barButtonName.tintColor = colorSet.fontColorSet
+        barButtonName.image = UIImage(systemName: "person.circle")
+    }
+    
+    func uiViewDesign(uiviewName1: UIView, uiviewName2: UIView, mainViewName: UIView) {
+        let colorSet = color()
+        
+        uiviewName1.backgroundColor = colorSet.backGroundColorSet
+        uiviewName2.backgroundColor = colorSet.backGroundColorSet
+        mainViewName.backgroundColor = colorSet.backGroundColorSet
+    }
+    
+    func textDesign(labelName: UILabel) {
+        let colorSet = color()
+        let fontFamily = UIFont(name: "Galmuri11-Regular", size: 17)
+        
+        labelName.text = "\(v1name)님 안녕하세요"
+        labelName.textColor = colorSet.fontColorSet
+        labelName.textAlignment = .center
+        labelName.font = fontFamily
+    }
+    
+    //다마고치 이름 디자인
+    func charNameDesign(labelName: UILabel) {
+        let colorSet = color()
+        
+        labelName.text = inGameCharName
+        labelName.textColor = colorSet.fontColorSet
+        labelName.font = colorSet.fontFamily
+        labelName.textAlignment = .center
+        labelName.layer.borderWidth = 1
+        labelName.layer.cornerRadius = 5
+        labelName.layer.backgroundColor = colorSet.backGroundColorSet.cgColor
+        labelName.layer.borderColor = colorSet.fontColorSet.cgColor
+    }
+    
+}
 
 
